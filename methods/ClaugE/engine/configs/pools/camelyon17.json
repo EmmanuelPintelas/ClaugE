@@ -1,0 +1,137 @@
+{
+ "notes": "Camelyon17, 2 classes: hospital 1 for selection (tuning), hospital 2 for test. The training distribution of ClaugE's candidates (EfficientNet-B0); run_claugE.py replaces the augmentation by the path's recipe (identity with probability 1/k) and applies the overrides of configs/claugE.json.",
+ "benchmark": "camelyon17",
+ "data_root": null,
+ "image_size": 96,
+ "pool_size": 100,
+ "max_draws": 150,
+ "select_metric": "auto",
+ "amp": true,
+ "gate": {
+  "min_balanced_acc_x_chance": 1.5,
+  "max_pred_share_excess": 0.4
+ },
+ "augment": {
+  "family_geometry": "flip",
+  "random_family": {
+   "families": [
+    "gauss",
+    "linf",
+    "photometric",
+    "stain"
+   ],
+   "ranges": {
+    "gauss": [
+     0.05,
+     0.25
+    ],
+    "linf": [
+     0.05,
+     0.25
+    ],
+    "photometric": [
+     0.4,
+     0.8
+    ],
+    "stain": [
+     0.15,
+     0.35
+    ]
+   },
+   "identity_prob": 0.25
+  }
+ },
+ "store": {
+  "rejected_predictions": true,
+  "rejected_checkpoints": false
+ },
+ "recipe": {
+  "arch": {
+   "fixed": "efficientnet_b0"
+  },
+  "pretrained": {
+   "fixed": true
+  },
+  "augment": {
+   "choice": [
+    "light_geometric",
+    "heavy_geometric",
+    "blur",
+    "sharpen",
+    "clahe",
+    "colour",
+    "occlusion",
+    "random_family",
+    "heavy_all3",
+    "heavy_all4"
+   ]
+  },
+  "optimizer": {
+   "choice": [
+    "adam"
+   ]
+  },
+  "lr": {
+   "choice": [
+    0.00077
+   ]
+  },
+  "weight_decay": {
+   "choice": [
+    1e-05
+   ]
+  },
+  "batch_size": {
+   "choice": [
+    128
+   ]
+  },
+  "epochs": {
+   "fixed": 3
+  },
+  "scheduler": {
+   "choice": [
+    "plateau",
+    "halve_each_epoch"
+   ],
+   "weights": [
+    0.8,
+    0.2
+   ]
+  },
+  "sched_patience": {
+   "int_uniform": [
+    1,
+    5
+   ]
+  },
+  "sched_factor": {
+   "choice": [
+    0.1,
+    0.2,
+    0.3,
+    0.5,
+    0.7
+   ]
+  },
+  "stop_patience": {
+   "int_uniform": [
+    1,
+    5
+   ]
+  },
+  "label_smoothing": {
+   "choice": [
+    0.05
+   ]
+  },
+  "drop_rate": {
+   "choice": [
+    0.2
+   ]
+  },
+  "train_frac": {
+   "fixed": 1.0
+  }
+ }
+}

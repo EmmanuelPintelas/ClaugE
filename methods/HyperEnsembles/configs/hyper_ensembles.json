@@ -1,0 +1,29 @@
+{
+  "notes": "Hyper-deep ensembles (Wenzel et al., 2020, Algorithm 1): random search over the regularization hyperparameters (weight decay, label smoothing, dropout; log-uniform / uniform ranges below), hyper_ens = greedy selection with replacement minimizing the selection-split negative log-likelihood of the averaged probabilities; the K selected configurations are each retrained from `stratify_seeds` new seeds (stratification), and hyper_ens selects K again from the stratified set. Stratification costs K x K trainings, so it is run for the smallest budget only; the larger budget selects with hyper_ens from the union of the random-search and stratified networks. Members weighted by how often they are selected. Base recipe as in every baseline, with the searched hyperparameters overriding it. Paths are relative to the repository root.",
+  "seed": 0,
+  "arch": "efficientnet_b0",
+  "search_size": 25,
+  "stratify_k": 5,
+  "stratify_seeds": 5,
+  "space": {
+    "weight_decay": {"loguniform": [1e-6, 1e-3]},
+    "label_smoothing": {"uniform": [0.0, 0.2]},
+    "drop_rate": {"uniform": [0.0, 0.5]}
+  },
+  "k_max": [5, 25],
+  "base": {
+    "all": {"lr": 1e-3, "weight_decay": 1e-5, "batch_size": 128, "label_smoothing": 0.0,
+            "drop_rate": 0.2, "scheduler": "plateau", "sched_patience": 1, "sched_factor": 0.5,
+            "stop_patience": 4},
+    "camelyon17": {"lr": 7.7e-4, "epochs": 3, "label_smoothing": 0.05},
+    "iwildcam": {"epochs": {"choice": [3, 5, 10]}},
+    "rxrx1": {"epochs": 20},
+    "kather": {"epochs": 10, "label_smoothing": 0.05}
+  },
+  "benchmarks": {
+    "camelyon17": {"image_size": 96, "data": "data/camelyon17"},
+    "iwildcam": {"image_size": 224, "data": "data/iwildcam"},
+    "rxrx1": {"image_size": 224, "data": "data/rxrx1"},
+    "kather": {"image_size": 224, "data": "data/kather"}
+  }
+}

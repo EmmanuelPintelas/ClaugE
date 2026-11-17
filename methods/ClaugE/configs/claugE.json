@@ -1,0 +1,25 @@
+{
+  "notes": "ClaugE settings. The candidates' training distributions are engine/configs/pools/<benchmark>.json and engine/configs/global.json, with the overrides below: the image size, the batch size (null keeps the distribution's), the pool size (candidates per recipe) and the augmentation, which is the path's recipe. Data paths are relative to the repository root.",
+  "seed": 0,
+  "draws": 100000,
+  "continue_prob": 0.5,
+  "references": 10,
+  "reference_pool": 10000,
+  "encoder": "resnet50_v1",
+  "pca_dims": 256,
+  "reduced_dims": 50,
+  "candidates_per_recipe": 5,
+  "max_draws_per_recipe": 15,
+  "partition_k": [5, 20],
+  "recipes": 5,
+  "k_max": [5, 25],
+  "backbones": {
+    "efficientnet_b0": "{benchmark}.json"
+  },
+  "benchmarks": {
+    "camelyon17": {"image_size": 96, "data": "data/camelyon17", "batch_size": null},
+    "iwildcam": {"image_size": 224, "data": "data/iwildcam", "batch_size": null},
+    "rxrx1": {"image_size": 224, "data": "data/rxrx1", "batch_size": null},
+    "kather": {"image_size": 224, "data": "data/kather", "batch_size": null}
+  }
+}

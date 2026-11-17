@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this code, the results or the committees, please cite the paper."
+title: "ClaugE: code and results for Cluster the Augmentations, Not the Data: Complementary Training Paths for Ensembles under Distribution Shift"
+authors:
+  - family-names: Pintelas
+    given-names: Emmanuel
+    affiliation: "Department of Statistics and Insurance Science, University of Piraeus"
+license: MIT
+type: software
+year: 2026

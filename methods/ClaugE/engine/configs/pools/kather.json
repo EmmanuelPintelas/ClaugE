@@ -1,0 +1,131 @@
+{
+ "notes": "Kather, 9 classes: selection on source validation, CRC-VAL-HE-7K for test. The training distribution of ClaugE's candidates (EfficientNet-B0); run_claugE.py replaces the augmentation by the path's recipe (identity with probability 1/k) and applies the overrides of configs/claugE.json.",
+ "benchmark": "kather",
+ "data_root": null,
+ "image_size": 96,
+ "pool_size": 100,
+ "max_draws": 150,
+ "select_metric": "auto",
+ "amp": true,
+ "gate": {
+  "min_balanced_acc_x_chance": 1.5,
+  "max_pred_share_excess": 0.4
+ },
+ "augment": {
+  "family_geometry": "flip",
+  "random_family": {
+   "families": [
+    "gauss",
+    "linf",
+    "photometric",
+    "stain"
+   ],
+   "ranges": {
+    "gauss": [
+     0.05,
+     0.25
+    ],
+    "linf": [
+     0.05,
+     0.25
+    ],
+    "photometric": [
+     0.4,
+     0.8
+    ],
+    "stain": [
+     0.15,
+     0.35
+    ]
+   },
+   "identity_prob": 0.25
+  }
+ },
+ "store": {
+  "rejected_predictions": true,
+  "rejected_checkpoints": false
+ },
+ "recipe": {
+  "arch": {
+   "fixed": "efficientnet_b0"
+  },
+  "pretrained": {
+   "fixed": true
+  },
+  "augment": {
+   "choice": [
+    "light_geometric",
+    "heavy_all4",
+    "heavy_all3",
+    "random_family"
+   ],
+   "weights": [
+    0.5,
+    0.3,
+    0.1,
+    0.1
+   ]
+  },
+  "optimizer": {
+   "choice": [
+    "adam"
+   ]
+  },
+  "lr": {
+   "choice": [
+    0.001
+   ]
+  },
+  "weight_decay": {
+   "choice": [
+    0.0001,
+    1e-05
+   ]
+  },
+  "batch_size": {
+   "choice": [
+    64,
+    128
+   ]
+  },
+  "epochs": {
+   "choice": [
+    7,
+    10
+   ]
+  },
+  "scheduler": {
+   "fixed": "plateau"
+  },
+  "sched_patience": {
+   "choice": [
+    1
+   ]
+  },
+  "sched_factor": {
+   "choice": [
+    0.5,
+    0.7
+   ]
+  },
+  "stop_patience": {
+   "choice": [
+    4
+   ]
+  },
+  "label_smoothing": {
+   "choice": [
+    0.05,
+    0.1
+   ]
+  },
+  "drop_rate": {
+   "choice": [
+    0.2
+   ]
+  },
+  "train_frac": {
+   "fixed": 1.0
+  }
+ }
+}

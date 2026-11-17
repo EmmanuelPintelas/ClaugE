@@ -1,0 +1,23 @@
+{
+  "notes": "Ensemble of averages (Arpit et al., 2022): every member is the simple moving average (SMA) of the weights of one run, taken from step sma_start to the end of training with no early stopping; members differ in their seed; uniform average of probabilities. Base recipe as in every baseline. Paths are relative to the repository root.",
+  "seed": 0,
+  "arch": "efficientnet_b0",
+  "members": 25,
+  "sma_start": 100,
+  "k_max": [5, 25],
+  "base": {
+    "all": {"lr": 1e-3, "weight_decay": 1e-5, "batch_size": 128, "label_smoothing": 0.0,
+            "drop_rate": 0.2, "scheduler": "plateau", "sched_patience": 1, "sched_factor": 0.5,
+            "stop_patience": 4},
+    "camelyon17": {"lr": 7.7e-4, "epochs": 3, "label_smoothing": 0.05},
+    "iwildcam": {"epochs": {"choice": [3, 5, 10]}},
+    "rxrx1": {"epochs": 20},
+    "kather": {"epochs": 10, "label_smoothing": 0.05}
+  },
+  "benchmarks": {
+    "camelyon17": {"image_size": 96, "data": "data/camelyon17"},
+    "iwildcam": {"image_size": 224, "data": "data/iwildcam"},
+    "rxrx1": {"image_size": 224, "data": "data/rxrx1"},
+    "kather": {"image_size": 224, "data": "data/kather"}
+  }
+}

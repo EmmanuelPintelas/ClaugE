@@ -1,0 +1,12 @@
+{
+  "notes": "ClaugE ablations (run_ablations.py), on Camelyon17 and RxRx1. A variant that retrains its members uses the main pools' seeds (pool seed 1000 k + c), so its member j has the same training settings and seeds as ClaugE's member j and differs only in what the variant changes. candidates: candidates per path of the retrained variants; with fewer than 5 the reference is ClaugE restricted to the same first candidates of its own pools (and only k_max = 5 is built). ssl_weights: the DINO ResNet-50 backbone state dict (dino_resnet50_pretrain.pth), downloaded separately. Paths are relative to methods/ClaugE.",
+  "seed": 0,
+  "backbone": "efficientnet_b0",
+  "candidates": {"camelyon17": 5, "rxrx1": 1},
+  "random_candidate_draws": 20,
+  "bootstrap": 1000,
+  "complementarity_bootstrap": 200,
+  "ssl_encoder": "dino_resnet50",
+  "ssl_weights": "weights/dino_resnet50_pretrain.pth",
+  "data_clusters": {"pca_dims": 256, "fit_images": 50000}
+}
