@@ -1,0 +1,1086 @@
+{
+ "benchmark": "rxrx1",
+ "metric": "macro_f1",
+ "paths": [
+  {
+   "path": 0,
+   "draws": 18238,
+   "operators": [
+    [
+     "resized_crop",
+     0.29076653141791864
+    ],
+    [
+     "sharpen",
+     0.27327557846255074
+    ],
+    [
+     "rotation",
+     0.23341375150784077
+    ]
+   ],
+   "candidates": 5,
+   "single_test_mean": 0.26734876885444236,
+   "single_test_min": 0.2623364489909881,
+   "single_test_max": 0.27359695001004525,
+   "single_selection_mean": 0.13193682198925677,
+   "five_candidates_test": 0.3116459760824634,
+   "five_candidates_selection": 0.16007493510366347
+  },
+  {
+   "path": 1,
+   "draws": 31690,
+   "operators": [
+    [
+     "gauss",
+     0.5256863363837173
+    ],
+    [
+     "linf",
+     0.5243609971599874
+    ],
+    [
+     "grayscale",
+     0.20896181760807825
+    ]
+   ],
+   "candidates": 5,
+   "single_test_mean": 0.07276310247400568,
+   "single_test_min": 0.06863667921713236,
+   "single_test_max": 0.07587287654946093,
+   "single_selection_mean": 0.03619592147796052,
+   "five_candidates_test": 0.09114392968669552,
+   "five_candidates_selection": 0.04975716965582106
+  },
+  {
+   "path": 2,
+   "draws": 30058,
+   "operators": [
+    [
+     "stain",
+     0.3395102801250915
+    ],
+    [
+     "clahe",
+     0.32776631845099474
+    ],
+    [
+     "channel_gain_gamma",
+     0.320480404551201
+    ]
+   ],
+   "candidates": 5,
+   "single_test_mean": 0.18096565756973218,
+   "single_test_min": 0.16943272195028192,
+   "single_test_max": 0.18937307375095105,
+   "single_selection_mean": 0.11355533528030956,
+   "five_candidates_test": 0.2253545251284582,
+   "five_candidates_selection": 0.14628637297928326
+  },
+  {
+   "path": 3,
+   "draws": 11310,
+   "operators": [
+    [
+     "grayscale",
+     0.878868258178603
+    ],
+    [
+     "channel_dropout",
+     0.2484526967285588
+    ],
+    [
+     "clahe",
+     0.14668435013262598
+    ]
+   ],
+   "candidates": 5,
+   "single_test_mean": 0.17000115641835445,
+   "single_test_min": 0.16501176088097383,
+   "single_test_max": 0.17946399017806716,
+   "single_selection_mean": 0.09697651887084809,
+   "five_candidates_test": 0.21157927856534472,
+   "five_candidates_selection": 0.1280834290851258
+  },
+  {
+   "path": 4,
+   "draws": 8704,
+   "operators": [
+    [
+     "photometric",
+     0.6701516544117647
+    ],
+    [
+     "shift_flip",
+     0.2825137867647059
+    ],
+    [
+     "rotation",
+     0.2035845588235294
+    ]
+   ],
+   "candidates": 5,
+   "single_test_mean": 0.26872260498649203,
+   "single_test_min": 0.2620349101571482,
+   "single_test_max": 0.27341294657853354,
+   "single_selection_mean": 0.15037428137371056,
+   "five_candidates_test": 0.32157654221745485,
+   "five_candidates_selection": 0.19078925678947983
+  }
+ ],
+ "variants": {
+  "nopartition": {
+   "networks": 5,
+   "single_test_mean": 0.17925282603011686,
+   "single_test_min": 0.16983016331370415,
+   "single_test_max": 0.19361217637781752,
+   "per_path_mean": [
+    0.18360816156721657,
+    0.1753173850765764,
+    0.17389624381526972,
+    0.16983016331370415,
+    0.19361217637781752
+   ],
+   "claugE_minus_variant_per_path": [
+    0.07872828742377155,
+    -0.10668070585944404,
+    0.004429047629669641,
+    -0.004818402432730323,
+    0.07738495110132337
+   ],
+   "paired_networks": 5,
+   "five_networks_test": 0.22447180949305076,
+   "first_candidates_disagreement": 0.7365096421933085,
+   "mixture_check": {
+    "variant_balanced_error": 0.8199669076249411,
+    "paths_balanced_error": [
+     0.7386934054954248,
+     0.9290393036222712,
+     0.8189970867099927,
+     0.8320420710236338,
+     0.7306653163764665
+    ],
+    "shares": [
+     0.18238,
+     0.3169,
+     0.30058,
+     0.1131,
+     0.08704
+    ],
+    "share_weighted_average": 0.8330106703056236,
+    "best_path": 0.7306653163764665
+   }
+  },
+  "random": {
+   "networks": 5,
+   "single_test_mean": 0.18587160633086627,
+   "single_test_min": 0.17740758376178828,
+   "single_test_max": 0.1963636660614864,
+   "per_path_mean": [
+    0.19338693741139532,
+    0.18312450155552484,
+    0.17907534286413654,
+    0.17740758376178828,
+    0.1963636660614864
+   ],
+   "claugE_minus_variant_per_path": [
+    0.06894951157959281,
+    -0.11448782233839248,
+    -0.0007500514191971785,
+    -0.01239582288081445,
+    0.0746334614176545
+   ],
+   "paired_networks": 5,
+   "five_networks_test": 0.23172099906816465,
+   "first_candidates_disagreement": 0.7262168912639406,
+   "partition": {
+    "sizes": [
+     18238,
+     31690,
+     30058,
+     11310,
+     8704
+    ],
+    "ari_to_main": -0.0002574517754930652,
+    "groups": [
+     {
+      "draws": 18238,
+      "operators": [
+       [
+        "grayscale",
+        0.17501919070073474
+       ],
+       [
+        "photometric",
+        0.16991994736264943
+       ],
+       [
+        "sharpen",
+        0.1698651167891216
+       ]
+      ]
+     },
+     {
+      "draws": 31690,
+      "operators": [
+       [
+        "sharpen",
+        0.16784474597664878
+       ],
+       [
+        "stain",
+        0.1674029662354055
+       ],
+       [
+        "gauss",
+        0.16730829914799622
+       ]
+      ]
+     },
+     {
+      "draws": 30058,
+      "operators": [
+       [
+        "stain",
+        0.17043715483398764
+       ],
+       [
+        "grayscale",
+        0.16887351121165747
+       ],
+       [
+        "shift_flip",
+        0.16810832390711292
+       ]
+      ]
+     },
+     {
+      "draws": 11310,
+      "operators": [
+       [
+        "rotation",
+        0.17170645446507515
+       ],
+       [
+        "channel_gain_gamma",
+        0.17073386383731212
+       ],
+       [
+        "channel_dropout",
+        0.17064544650751548
+       ]
+      ]
+     },
+     {
+      "draws": 8704,
+      "operators": [
+       [
+        "sharpen",
+        0.17164522058823528
+       ],
+       [
+        "linf",
+        0.17072610294117646
+       ],
+       [
+        "resized_crop",
+        0.16819852941176472
+       ]
+      ]
+     }
+    ]
+   },
+   "mixture_check": {
+    "variant_balanced_error": 0.812958929666568,
+    "paths_balanced_error": [
+     0.7386934054954248,
+     0.9290393036222712,
+     0.8189970867099927,
+     0.8320420710236338,
+     0.7306653163764665
+    ],
+    "shares": [
+     0.18238,
+     0.3169,
+     0.30058,
+     0.1131,
+     0.08704
+    ],
+    "share_weighted_average": 0.8330106703056236,
+    "best_path": 0.7306653163764665
+   }
+  },
+  "data": {
+   "networks": 5,
+   "single_test_mean": 0.029380893520224837,
+   "single_test_min": 0.003389011751945809,
+   "single_test_max": 0.09645941876298908,
+   "per_path_mean": [
+    0.003389011751945809,
+    0.013415501873931009,
+    0.017846083678285364,
+    0.015794451533972905,
+    0.09645941876298908
+   ],
+   "claugE_minus_variant_per_path": [
+    0.2589474372390423,
+    0.05522117734320135,
+    0.160479207766654,
+    0.14921730934700092,
+    0.17453770871615182
+   ],
+   "paired_networks": 5,
+   "five_networks_test": 0.09073662361797452,
+   "first_candidates_disagreement": 0.9915078996282526
+  },
+  "oneref": {
+   "networks": 5,
+   "single_test_mean": 0.16225796455131436,
+   "single_test_min": 0.07168546214523913,
+   "single_test_max": 0.2695108365518373,
+   "per_path_mean": [
+    0.18794127171111344,
+    0.07168546214523913,
+    0.11644306144698585,
+    0.16570919090139608,
+    0.2695108365518373
+   ],
+   "claugE_minus_variant_per_path": [
+    0.07439517727987469,
+    -0.003048782928106772,
+    0.06188222999795351,
+    -0.0006974300204222461,
+    0.001486290927303624
+   ],
+   "paired_networks": 5,
+   "five_networks_test": 0.2744103038530784,
+   "first_candidates_disagreement": 0.8576672862453532,
+   "partition": {
+    "sizes": [
+     30703,
+     32474,
+     126,
+     8777,
+     27920
+    ],
+    "ari_to_main": 0.7979791134495012,
+    "groups": [
+     {
+      "draws": 30703,
+      "operators": [
+       [
+        "stain",
+        0.3277529883073315
+       ],
+       [
+        "clahe",
+        0.30961143862163304
+       ],
+       [
+        "channel_gain_gamma",
+        0.3060938670488226
+       ]
+      ]
+     },
+     {
+      "draws": 32474,
+      "operators": [
+       [
+        "gauss",
+        0.5129334236620066
+       ],
+       [
+        "linf",
+        0.511208967173739
+       ],
+       [
+        "grayscale",
+        0.221407895547207
+       ]
+      ]
+     },
+     {
+      "draws": 126,
+      "operators": [
+       [
+        "grayscale",
+        1.0
+       ]
+      ]
+     },
+     {
+      "draws": 8777,
+      "operators": [
+       [
+        "grayscale",
+        0.9699213854392161
+       ],
+       [
+        "clahe",
+        0.21237324826250428
+       ],
+       [
+        "channel_dropout",
+        0.1897003531958528
+       ]
+      ]
+     },
+     {
+      "draws": 27920,
+      "operators": [
+       [
+        "shift_flip",
+        0.2349570200573066
+       ],
+       [
+        "sharpen",
+        0.23019340974212035
+       ],
+       [
+        "photometric",
+        0.23015759312320916
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  "ssl": {
+   "networks": 5,
+   "single_test_mean": 0.1710541237902687,
+   "single_test_min": 0.06745335850035285,
+   "single_test_max": 0.260640959187932,
+   "per_path_mean": [
+    0.06745335850035285,
+    0.260640959187932,
+    0.17702151099126595,
+    0.16002498083958583,
+    0.1901298094322069
+   ],
+   "claugE_minus_variant_per_path": [
+    0.1948830904906353,
+    -0.19200427997079966,
+    0.0013037804536734088,
+    0.004986780041388,
+    0.080867318046934
+   ],
+   "paired_networks": 5,
+   "five_networks_test": 0.24084833199584876,
+   "first_candidates_disagreement": 0.8338057620817845,
+   "partition": {
+    "sizes": [
+     31374,
+     28718,
+     20249,
+     8154,
+     11505
+    ],
+    "ari_to_main": 0.7014076438093623,
+    "groups": [
+     {
+      "draws": 31374,
+      "operators": [
+       [
+        "gauss",
+        0.5311085612290432
+       ],
+       [
+        "linf",
+        0.5302479760311085
+       ],
+       [
+        "grayscale",
+        0.20038885701536305
+       ]
+      ]
+     },
+     {
+      "draws": 28718,
+      "operators": [
+       [
+        "shift_flip",
+        0.22334424402813566
+       ],
+       [
+        "resized_crop",
+        0.22062817744968313
+       ],
+       [
+        "photometric",
+        0.2181558604359635
+       ]
+      ]
+     },
+     {
+      "draws": 20249,
+      "operators": [
+       [
+        "stain",
+        0.4453553261889476
+       ],
+       [
+        "channel_gain_gamma",
+        0.4014025383969579
+       ],
+       [
+        "channel_dropout",
+        0.3114227863104351
+       ]
+      ]
+     },
+     {
+      "draws": 8154,
+      "operators": [
+       [
+        "grayscale",
+        0.9988962472406181
+       ],
+       [
+        "clahe",
+        0.15378955114054452
+       ],
+       [
+        "sharpen",
+        0.15317635516311012
+       ]
+      ]
+     },
+     {
+      "draws": 11505,
+      "operators": [
+       [
+        "clahe",
+        0.8703172533681008
+       ],
+       [
+        "channel_gain_gamma",
+        0.17401129943502824
+       ],
+       [
+        "channel_dropout",
+        0.17227292481529768
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  "identity0": {
+   "networks": 5,
+   "single_test_mean": 0.1835838775206302,
+   "single_test_min": 0.05463683989639741,
+   "single_test_max": 0.27034091625818174,
+   "per_path_mean": [
+    0.2582555132972877,
+    0.05463683989639741,
+    0.1739114740560385,
+    0.16077464409524578,
+    0.27034091625818174
+   ],
+   "claugE_minus_variant_per_path": [
+    0.004080935693700438,
+    0.013999839320734953,
+    0.00441381738890087,
+    0.004237116785728051,
+    0.0006562112209591575
+   ],
+   "paired_networks": 5,
+   "five_networks_test": 0.30234752316926194,
+   "first_candidates_disagreement": 0.8380924721189592
+  },
+  "identity0.5": {
+   "networks": 5,
+   "single_test_mean": 0.19379243979131863,
+   "single_test_min": 0.1246404891302422,
+   "single_test_max": 0.26445031286122866,
+   "per_path_mean": [
+    0.2632150162475699,
+    0.1246404891302422,
+    0.1500717641852573,
+    0.1665846165322951,
+    0.26445031286122866
+   ],
+   "claugE_minus_variant_per_path": [
+    -0.0008785672565817526,
+    -0.05600380991310984,
+    0.028253527259682054,
+    -0.0015728556513212588,
+    0.006546814617912233
+   ],
+   "paired_networks": 5,
+   "five_networks_test": 0.2989946258807401,
+   "first_candidates_disagreement": 0.8137807853159853
+  }
+ },
+ "first_candidates": {
+  "disagreement": 0.8283892890334572,
+  "uniform_test": 0.3044553671493418
+ },
+ "k20": {
+  "paths": [
+   {
+    "path": 0,
+    "draws": 14073,
+    "operators": [
+     [
+      "linf",
+      0.5308036665956086
+     ],
+     [
+      "gauss",
+      0.5246216158601578
+     ],
+     [
+      "shift_flip",
+      0.10651602359127407
+     ]
+    ],
+    "single_test": 0.08253500361201896,
+    "single_selection": 0.034057005490365055,
+    "main_group": 1,
+    "share_in_main_group": 1.0
+   },
+   {
+    "path": 1,
+    "draws": 9502,
+    "operators": [
+     [
+      "channel_gain_gamma",
+      0.7525784045464112
+     ],
+     [
+      "channel_dropout",
+      0.24415912439486423
+     ],
+     [
+      "rotation",
+      0.14270679856872237
+     ]
+    ],
+    "single_test": 0.21807569065221524,
+    "single_selection": 0.1254185447787937,
+    "main_group": 2,
+    "share_in_main_group": 0.9957903599242265
+   },
+   {
+    "path": 2,
+    "draws": 5361,
+    "operators": [
+     [
+      "resized_crop",
+      0.9985077410930796
+     ],
+     [
+      "sharpen",
+      0.08543182242119007
+     ],
+     [
+      "rotation",
+      0.08412609587763477
+     ]
+    ],
+    "single_test": 0.24755463027960628,
+    "single_selection": 0.1128159167679188,
+    "main_group": 0,
+    "share_in_main_group": 0.9423614997202014
+   },
+   {
+    "path": 3,
+    "draws": 4159,
+    "operators": [
+     [
+      "clahe",
+      1.0
+     ],
+     [
+      "photometric",
+      0.002644866554460207
+     ],
+     [
+      "resized_crop",
+      0.0009617696561673479
+     ]
+    ],
+    "single_test": 0.14068794945413773,
+    "single_selection": 0.06554837207147621,
+    "main_group": 2,
+    "share_in_main_group": 0.9963933637893725
+   },
+   {
+    "path": 4,
+    "draws": 5491,
+    "operators": [
+     [
+      "grayscale",
+      0.9996357676197414
+     ],
+     [
+      "clahe",
+      0.2407576033509379
+     ],
+     [
+      "sharpen",
+      0.2332908395556365
+     ]
+    ],
+    "single_test": 0.17793320531330942,
+    "single_selection": 0.10508130959334397,
+    "main_group": 3,
+    "share_in_main_group": 1.0
+   },
+   {
+    "path": 5,
+    "draws": 6188,
+    "operators": [
+     [
+      "photometric",
+      0.909825468648998
+     ],
+     [
+      "sharpen",
+      0.16435035552682611
+     ],
+     [
+      "rotation",
+      0.15982546864899805
+     ]
+    ],
+    "single_test": 0.23657135560493384,
+    "single_selection": 0.13917548900117055,
+    "main_group": 4,
+    "share_in_main_group": 0.9810924369747899
+   },
+   {
+    "path": 6,
+    "draws": 2345,
+    "operators": [
+     [
+      "clahe",
+      0.5846481876332622
+     ],
+     [
+      "linf",
+      0.5773987206823028
+     ],
+     [
+      "grayscale",
+      0.5215351812366738
+     ]
+    ],
+    "single_test": 0.06023230262210149,
+    "single_selection": 0.029283230090083618,
+    "main_group": 1,
+    "share_in_main_group": 1.0
+   },
+   {
+    "path": 7,
+    "draws": 4860,
+    "operators": [
+     [
+      "clahe",
+      0.9987654320987654
+     ],
+     [
+      "rotation",
+      0.2366255144032922
+     ],
+     [
+      "sharpen",
+      0.22695473251028805
+     ]
+    ],
+    "single_test": 0.20267810613892345,
+    "single_selection": 0.12555050121285272,
+    "main_group": 2,
+    "share_in_main_group": 0.9987654320987654
+   },
+   {
+    "path": 8,
+    "draws": 11767,
+    "operators": [
+     [
+      "gauss",
+      0.5861307045126201
+     ],
+     [
+      "linf",
+      0.5631851788901164
+     ],
+     [
+      "stain",
+      0.34605251975864704
+     ]
+    ],
+    "single_test": 0.05122166173476473,
+    "single_selection": 0.03035536800726718,
+    "main_group": 1,
+    "share_in_main_group": 0.9999150165717685
+   },
+   {
+    "path": 9,
+    "draws": 4158,
+    "operators": [
+     [
+      "sharpen",
+      1.0
+     ],
+     [
+      "photometric",
+      0.002886002886002886
+     ],
+     [
+      "channel_gain_gamma",
+      0.0021645021645021645
+     ]
+    ],
+    "single_test": 0.17501314733551251,
+    "single_selection": 0.07973688415932349,
+    "main_group": 0,
+    "share_in_main_group": 1.0
+   },
+   {
+    "path": 10,
+    "draws": 1397,
+    "operators": [
+     [
+      "channel_dropout",
+      1.0
+     ],
+     [
+      "resized_crop",
+      0.0007158196134574087
+     ],
+     [
+      "sharpen",
+      0.0007158196134574087
+     ]
+    ],
+    "single_test": 0.1553593310710056,
+    "single_selection": 0.0691037867784478,
+    "main_group": 0,
+    "share_in_main_group": 0.9549033643521833
+   },
+   {
+    "path": 11,
+    "draws": 1332,
+    "operators": [
+     [
+      "rotation",
+      1.0
+     ],
+     [
+      "photometric",
+      0.0015015015015015015
+     ],
+     [
+      "resized_crop",
+      0.0007507507507507507
+     ]
+    ],
+    "single_test": 0.21264703927393758,
+    "single_selection": 0.09749942869003368,
+    "main_group": 0,
+    "share_in_main_group": 0.954954954954955
+   },
+   {
+    "path": 12,
+    "draws": 9856,
+    "operators": [
+     [
+      "stain",
+      0.8521712662337663
+     ],
+     [
+      "channel_dropout",
+      0.26187094155844154
+     ],
+     [
+      "channel_gain_gamma",
+      0.14042207792207792
+     ]
+    ],
+    "single_test": 0.16074369503463826,
+    "single_selection": 0.10434148009428094,
+    "main_group": 2,
+    "share_in_main_group": 1.0
+   },
+   {
+    "path": 13,
+    "draws": 1403,
+    "operators": [
+     [
+      "rotation",
+      1.0
+     ],
+     [
+      "photometric",
+      0.0014255167498218105
+     ],
+     [
+      "channel_gain_gamma",
+      0.0014255167498218105
+     ]
+    ],
+    "single_test": 0.19110374657020224,
+    "single_selection": 0.09136529249358899,
+    "main_group": 0,
+    "share_in_main_group": 0.9992872416250891
+   },
+   {
+    "path": 14,
+    "draws": 5773,
+    "operators": [
+     [
+      "shift_flip",
+      0.9993071193486922
+     ],
+     [
+      "rotation",
+      0.09440498874068942
+     ],
+     [
+      "sharpen",
+      0.09197990646111208
+     ]
+    ],
+    "single_test": 0.27536128318180214,
+    "single_selection": 0.14121523911562128,
+    "main_group": 0,
+    "share_in_main_group": 0.6166637796639529
+   },
+   {
+    "path": 15,
+    "draws": 2097,
+    "operators": [
+     [
+      "grayscale",
+      0.9990462565569862
+     ],
+     [
+      "gauss",
+      0.5650929899856938
+     ],
+     [
+      "linf",
+      0.5555555555555556
+     ]
+    ],
+    "single_test": 0.04065277131855479,
+    "single_selection": 0.020168361040809327,
+    "main_group": 1,
+    "share_in_main_group": 0.9990462565569862
+   },
+   {
+    "path": 16,
+    "draws": 1352,
+    "operators": [
+     [
+      "channel_dropout",
+      1.0
+     ],
+     [
+      "photometric",
+      0.0014792899408284023
+     ]
+    ],
+    "single_test": 0.1077728391959695,
+    "single_selection": 0.0684255429615867,
+    "main_group": 2,
+    "share_in_main_group": 0.9822485207100592
+   },
+   {
+    "path": 17,
+    "draws": 2011,
+    "operators": [
+     [
+      "grayscale",
+      0.887120835405271
+     ],
+     [
+      "channel_dropout",
+      0.49925410243659873
+     ],
+     [
+      "channel_gain_gamma",
+      0.39880656389855795
+     ]
+    ],
+    "single_test": 0.16632828342159922,
+    "single_selection": 0.08979136374109603,
+    "main_group": 3,
+    "share_in_main_group": 0.8642466434609647
+   },
+   {
+    "path": 18,
+    "draws": 1351,
+    "operators": [
+     [
+      "channel_dropout",
+      1.0
+     ],
+     [
+      "stain",
+      0.0007401924500370096
+     ],
+     [
+      "photometric",
+      0.0007401924500370096
+     ]
+    ],
+    "single_test": 0.1529725201562044,
+    "single_selection": 0.07245539795140185,
+    "main_group": 3,
+    "share_in_main_group": 0.9800148038490007
+   },
+   {
+    "path": 19,
+    "draws": 5524,
+    "operators": [
+     [
+      "grayscale",
+      0.7603186097031137
+     ],
+     [
+      "rotation",
+      0.2387762490948588
+     ],
+     [
+      "channel_gain_gamma",
+      0.0018102824040550326
+     ]
+    ],
+    "single_test": 0.16312784969427588,
+    "single_selection": 0.07201470505627253,
+    "main_group": 3,
+    "share_in_main_group": 0.49185372918175235
+   }
+  ],
+  "nested_share": 0.94042,
+  "single_test_mean": 0.16092862058328566,
+  "first_candidates_disagreement": 0.8638031023772255
+ },
+ "pairs": {
+  "paths": [
+   4,
+   0
+  ],
+  "across": {
+   "n": 25,
+   "mean": 0.2924892140606006,
+   "min": 0.2804910293215813,
+   "max": 0.3033958313646603
+  },
+  "within 4": {
+   "n": 10,
+   "mean": 0.2919514446934161,
+   "min": 0.2823346865912003,
+   "max": 0.29940522150348065
+  },
+  "within 0": {
+   "n": 10,
+   "mean": 0.2873309313258653,
+   "min": 0.27669722765672694,
+   "max": 0.29982121331230616
+  }
+ }
+}

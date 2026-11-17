@@ -1,0 +1,31 @@
+{
+ "T": 100000,
+ "lengths": {
+  "1": 49862,
+  "2": 25066,
+  "3": 12583,
+  "4": 6316,
+  "5": 3141,
+  "6": 1529,
+  "7": 744,
+  "8": 366,
+  "9": 205,
+  "10": 94,
+  "11": 54,
+  "12": 40
+ },
+ "operator_counts": {
+  "grayscale": 16886,
+  "stain": 16841,
+  "resized_crop": 16693,
+  "sharpen": 16668,
+  "gauss": 16664,
+  "linf": 16652,
+  "channel_gain_gamma": 16645,
+  "photometric": 16626,
+  "rotation": 16618,
+  "clahe": 16592,
+  "channel_dropout": 16567,
+  "shift_flip": 16429
+ }
+}

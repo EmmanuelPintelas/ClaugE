@@ -1,0 +1,169 @@
+{
+ "benchmark": "camelyon17",
+ "rows": [
+  {
+   "method": "Deep ensembles",
+   "folder": "DeepEnsembles",
+   "k_max": 5,
+   "test_primary": 0.6851430367736007,
+   "networks": 5,
+   "inference_gflops": 0.3581632653061224,
+   "networks_trained": 5,
+   "hours": 1.0937499999999998
+  },
+  {
+   "method": "Deep ensembles",
+   "folder": "DeepEnsembles",
+   "k_max": 25,
+   "test_primary": 0.7392323969875677,
+   "networks": 25,
+   "inference_gflops": 1.7908163265306123,
+   "networks_trained": 25,
+   "hours": 5.46325
+  },
+  {
+   "method": "Hyperparameter ens.",
+   "folder": "HyperEnsembles",
+   "k_max": 5,
+   "test_primary": 0.8246091931091839,
+   "networks": 4,
+   "inference_gflops": 0.28653061224489795,
+   "networks_trained": 40,
+   "hours": 8.686472222222221
+  },
+  {
+   "method": "Hyperparameter ens.",
+   "folder": "HyperEnsembles",
+   "k_max": 25,
+   "test_primary": 0.7721832883823853,
+   "networks": 5,
+   "inference_gflops": 0.3581632653061224,
+   "networks_trained": 40,
+   "hours": 8.686472222222221
+  },
+  {
+   "method": "Augmentation-diverse",
+   "folder": "AugDiverse",
+   "k_max": 5,
+   "test_primary": 0.8189079606929219,
+   "networks": 5,
+   "inference_gflops": 0.3581632653061224,
+   "networks_trained": 5,
+   "hours": 1.7871666666666668
+  },
+  {
+   "method": "Augmentation-diverse",
+   "folder": "AugDiverse",
+   "k_max": 25,
+   "test_primary": 0.8777472864589975,
+   "networks": 25,
+   "inference_gflops": 1.7908163265306123,
+   "networks_trained": 25,
+   "hours": 7.861388888888888
+  },
+  {
+   "method": "Ensemble of averages",
+   "folder": "EoA",
+   "k_max": 5,
+   "test_primary": 0.7616780726814782,
+   "networks": 5,
+   "inference_gflops": 0.3581632653061224,
+   "networks_trained": 5,
+   "hours": 1.1399444444444442
+  },
+  {
+   "method": "Ensemble of averages",
+   "folder": "EoA",
+   "k_max": 25,
+   "test_primary": 0.7439067890954121,
+   "networks": 25,
+   "inference_gflops": 1.7908163265306123,
+   "networks_trained": 25,
+   "hours": 5.778583333333332
+  },
+  {
+   "method": "DiWA",
+   "folder": "DiWA",
+   "k_max": 5,
+   "test_primary": 0.7608859456885257,
+   "networks": 1,
+   "inference_gflops": 0.07163265306122449,
+   "networks_trained": 25,
+   "hours": 5.506194444444443
+  },
+  {
+   "method": "DiWA",
+   "folder": "DiWA",
+   "k_max": 25,
+   "test_primary": 0.7608859456885257,
+   "networks": 1,
+   "inference_gflops": 0.07163265306122449,
+   "networks_trained": 25,
+   "hours": 5.506194444444443
+  },
+  {
+   "method": "Lookaround",
+   "folder": "Lookaround",
+   "k_max": 5,
+   "test_primary": 0.8159198096494633,
+   "networks": 1,
+   "inference_gflops": 0.07163265306122449,
+   "networks_trained": 1,
+   "hours": 0.6098333333333333
+  },
+  {
+   "method": "Lookaround",
+   "folder": "Lookaround",
+   "k_max": 25,
+   "test_primary": 0.8159198096494633,
+   "networks": 1,
+   "inference_gflops": 0.07163265306122449,
+   "networks_trained": 1,
+   "hours": 0.6098333333333333
+  },
+  {
+   "method": "GeNeX",
+   "folder": "GeNeX",
+   "k_max": 5,
+   "test_primary": 0.8447948869373687,
+   "networks": 4,
+   "inference_gflops": 0.28653061224489795,
+   "networks_trained": 193,
+   "hours": 19.025083333333335
+  },
+  {
+   "method": "GeNeX",
+   "folder": "GeNeX",
+   "k_max": 25,
+   "test_primary": 0.8447948869373687,
+   "networks": 4,
+   "inference_gflops": 0.28653061224489795,
+   "networks_trained": 193,
+   "hours": 19.025083333333335
+  },
+  {
+   "method": "ClaugE",
+   "folder": "ClaugE",
+   "k_max": 5,
+   "test_primary": 0.9621408137713572,
+   "networks": 5,
+   "inference_gflops": 0.3581632653061224,
+   "networks_trained": 25,
+   "hours": 6.430679684731695,
+   "training_hours": 4.593249999999999,
+   "partition_hours": 1.8374296847316953
+  },
+  {
+   "method": "ClaugE",
+   "folder": "ClaugE",
+   "k_max": 25,
+   "test_primary": 0.9592813955302513,
+   "networks": 25,
+   "inference_gflops": 1.7908163265306123,
+   "networks_trained": 25,
+   "hours": 6.430679684731695,
+   "training_hours": 4.593249999999999,
+   "partition_hours": 1.8374296847316953
+  }
+ ]
+}

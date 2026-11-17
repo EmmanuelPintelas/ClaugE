@@ -1,0 +1,653 @@
+{
+ "benchmark": "camelyon17",
+ "rows": [
+  {
+   "variant": "whole palette for every member (no partition)",
+   "name": "nopartition",
+   "k_max": 5,
+   "candidates_per_path": 5,
+   "value": 0.9530885744163479,
+   "reference": 0.9621408137713572,
+   "reference_dir": "camelyon17_efficientnet_b0_kmax5",
+   "delta": -0.009052239355009317,
+   "ci95": [
+    -0.010128141711816202,
+    -0.008049882747367699
+   ],
+   "uniform_value": 0.9571237255415916,
+   "uniform_reference": 0.9586094112855673,
+   "uniform_delta": -0.0014856857439756732,
+   "uniform_ci95": [
+    -0.0024124677901364382,
+    -0.0006091098252883983
+   ]
+  },
+  {
+   "variant": "whole palette for every member (no partition)",
+   "name": "nopartition",
+   "k_max": 25,
+   "candidates_per_path": 5,
+   "value": 0.9558511109055068,
+   "reference": 0.9592813955302513,
+   "reference_dir": "camelyon17_efficientnet_b0_kmax25",
+   "delta": -0.003430284624744484,
+   "ci95": [
+    -0.004407452079681523,
+    -0.0023711888331759607
+   ],
+   "uniform_value": 0.9564539261030487,
+   "uniform_reference": 0.955078989219209,
+   "uniform_delta": 0.001374936883839717,
+   "uniform_ci95": [
+    0.0006311293186960137,
+    0.002120979250214652
+   ]
+  },
+  {
+   "variant": "random partition of the transforms into k groups",
+   "name": "random",
+   "k_max": 5,
+   "candidates_per_path": 5,
+   "value": 0.9589277122593641,
+   "reference": 0.9621408137713572,
+   "reference_dir": "camelyon17_efficientnet_b0_kmax5",
+   "delta": -0.003213101511993055,
+   "ci95": [
+    -0.004085273359402983,
+    -0.0024048230486341054
+   ],
+   "uniform_value": 0.9564559751927328,
+   "uniform_reference": 0.9586094112855673,
+   "uniform_delta": -0.002153436092834471,
+   "uniform_ci95": [
+    -0.0029777805096200816,
+    -0.0012592801199106832
+   ]
+  },
+  {
+   "variant": "random partition of the transforms into k groups",
+   "name": "random",
+   "k_max": 25,
+   "candidates_per_path": 5,
+   "value": 0.957412212056849,
+   "reference": 0.9592813955302513,
+   "reference_dir": "camelyon17_efficientnet_b0_kmax25",
+   "delta": -0.0018691834734022583,
+   "ci95": [
+    -0.002823931538322194,
+    -0.0009411844505970662
+   ],
+   "uniform_value": 0.9559866363471047,
+   "uniform_reference": 0.955078989219209,
+   "uniform_delta": 0.0009076471278957055,
+   "uniform_ci95": [
+    0.0001616632358554443,
+    0.0016709580969131409
+   ]
+  },
+  {
+   "variant": "partition of the data instead of the augmentations",
+   "name": "data",
+   "k_max": 5,
+   "candidates_per_path": 5,
+   "value": 0.9217751579337838,
+   "reference": 0.9621408137713572,
+   "reference_dir": "camelyon17_efficientnet_b0_kmax5",
+   "delta": -0.040365655837573344,
+   "ci95": [
+    -0.04197767380284713,
+    -0.03885536860185309
+   ],
+   "uniform_value": 0.9283834730454029,
+   "uniform_reference": 0.9586094112855673,
+   "uniform_delta": -0.030225938240164396,
+   "uniform_ci95": [
+    -0.0316484842204751,
+    -0.02886467775755455
+   ]
+  },
+  {
+   "variant": "partition of the data instead of the augmentations",
+   "name": "data",
+   "k_max": 25,
+   "candidates_per_path": 5,
+   "value": 0.9208307334823415,
+   "reference": 0.9592813955302513,
+   "reference_dir": "camelyon17_efficientnet_b0_kmax25",
+   "delta": -0.03845066204790981,
+   "ci95": [
+    -0.03999309453669181,
+    -0.0369969054830336
+   ],
+   "uniform_value": 0.9338419918007325,
+   "uniform_reference": 0.955078989219209,
+   "uniform_delta": -0.02123699741847651,
+   "uniform_ci95": [
+    -0.02251745373532816,
+    -0.020041914545606693
+   ]
+  },
+  {
+   "variant": "one reference image instead of ten",
+   "name": "oneref",
+   "k_max": 5,
+   "candidates_per_path": 5,
+   "value": 0.9539932475319299,
+   "reference": 0.9621408137713572,
+   "reference_dir": "camelyon17_efficientnet_b0_kmax5",
+   "delta": -0.00814756623942725,
+   "ci95": [
+    -0.009062548549627658,
+    -0.0071807357364340185
+   ],
+   "uniform_value": 0.9535087957561922,
+   "uniform_reference": 0.9586094112855673,
+   "uniform_delta": -0.00510061552937513,
+   "uniform_ci95": [
+    -0.00597484268103429,
+    -0.004170344753132343
+   ]
+  },
+  {
+   "variant": "one reference image instead of ten",
+   "name": "oneref",
+   "k_max": 25,
+   "candidates_per_path": 5,
+   "value": 0.9555660681884534,
+   "reference": 0.9592813955302513,
+   "reference_dir": "camelyon17_efficientnet_b0_kmax25",
+   "delta": -0.003715327341797914,
+   "ci95": [
+    -0.004534895085897109,
+    -0.0028495968790158118
+   ],
+   "uniform_value": 0.9419748277491079,
+   "uniform_reference": 0.955078989219209,
+   "uniform_delta": -0.013104161470101072,
+   "uniform_ci95": [
+    -0.013905046628595222,
+    -0.012243184289153186
+   ]
+  },
+  {
+   "variant": "self-supervised encoder instead of the supervised ResNet-50",
+   "name": "ssl",
+   "k_max": 5,
+   "candidates_per_path": 5,
+   "value": 0.9604251693089848,
+   "reference": 0.9621408137713572,
+   "reference_dir": "camelyon17_efficientnet_b0_kmax5",
+   "delta": -0.0017156444623723788,
+   "ci95": [
+    -0.0025782614850985318,
+    -0.0008607521734763562
+   ],
+   "uniform_value": 0.9569503478229108,
+   "uniform_reference": 0.9586094112855673,
+   "uniform_delta": -0.0016590634626565404,
+   "uniform_ci95": [
+    -0.002512026357131636,
+    -0.0008430813181266625
+   ]
+  },
+  {
+   "variant": "self-supervised encoder instead of the supervised ResNet-50",
+   "name": "ssl",
+   "k_max": 25,
+   "candidates_per_path": 5,
+   "value": 0.9525090709053076,
+   "reference": 0.9592813955302513,
+   "reference_dir": "camelyon17_efficientnet_b0_kmax25",
+   "delta": -0.006772324624943704,
+   "ci95": [
+    -0.007684525282639828,
+    -0.005880699510436097
+   ],
+   "uniform_value": 0.956632812236299,
+   "uniform_reference": 0.955078989219209,
+   "uniform_delta": 0.0015538230170900613,
+   "uniform_ci95": [
+    0.0010271676027877486,
+    0.00210148648267785
+   ]
+  },
+  {
+   "variant": "identity share 0 instead of 1/k",
+   "name": "identity0",
+   "k_max": 5,
+   "candidates_per_path": 5,
+   "value": 0.9435585790010219,
+   "reference": 0.9621408137713572,
+   "reference_dir": "camelyon17_efficientnet_b0_kmax5",
+   "delta": -0.01858223477033527,
+   "ci95": [
+    -0.01972469012819899,
+    -0.017362881260395546
+   ],
+   "uniform_value": 0.9584656723050868,
+   "uniform_reference": 0.9586094112855673,
+   "uniform_delta": -0.00014373898048047895,
+   "uniform_ci95": [
+    -0.0010168172005894898,
+    0.0007365750795097352
+   ]
+  },
+  {
+   "variant": "identity share 0 instead of 1/k",
+   "name": "identity0",
+   "k_max": 25,
+   "candidates_per_path": 5,
+   "value": 0.9489356990945625,
+   "reference": 0.9592813955302513,
+   "reference_dir": "camelyon17_efficientnet_b0_kmax25",
+   "delta": -0.010345696435688723,
+   "ci95": [
+    -0.011373069630106947,
+    -0.00923513716609831
+   ],
+   "uniform_value": 0.9544792816953125,
+   "uniform_reference": 0.955078989219209,
+   "uniform_delta": -0.0005997075238964866,
+   "uniform_ci95": [
+    -0.0012173044777369219,
+    -2.0032524556199124e-05
+   ]
+  },
+  {
+   "variant": "identity share 1/2 instead of 1/k",
+   "name": "identity0.5",
+   "k_max": 5,
+   "candidates_per_path": 5,
+   "value": 0.9481521731915045,
+   "reference": 0.9621408137713572,
+   "reference_dir": "camelyon17_efficientnet_b0_kmax5",
+   "delta": -0.013988640579852718,
+   "ci95": [
+    -0.01515480331233146,
+    -0.01281943927362572
+   ],
+   "uniform_value": 0.9438095715909262,
+   "uniform_reference": 0.9586094112855673,
+   "uniform_delta": -0.01479983969464116,
+   "uniform_ci95": [
+    -0.01589884143228572,
+    -0.013606981006378149
+   ]
+  },
+  {
+   "variant": "identity share 1/2 instead of 1/k",
+   "name": "identity0.5",
+   "k_max": 25,
+   "candidates_per_path": 5,
+   "value": 0.9465760314520222,
+   "reference": 0.9592813955302513,
+   "reference_dir": "camelyon17_efficientnet_b0_kmax25",
+   "delta": -0.012705364078229087,
+   "ci95": [
+    -0.01377236506806719,
+    -0.011663838426010287
+   ],
+   "uniform_value": 0.9383689653613636,
+   "uniform_reference": 0.955078989219209,
+   "uniform_delta": -0.01671002385784537,
+   "uniform_ci95": [
+    -0.017673807329017164,
+    -0.01575924861303754
+   ]
+  },
+  {
+   "variant": "k = 20 paths with one candidate each, at k_max = 25",
+   "name": "k20",
+   "k_max": 25,
+   "candidates_per_path": 1,
+   "value": 0.9607321405968884,
+   "reference": 0.9592813955302513,
+   "reference_dir": "camelyon17_efficientnet_b0_kmax25",
+   "delta": 0.0014507450666371158,
+   "ci95": [
+    0.0006163587347809669,
+    0.0023041655300824106
+   ],
+   "uniform_value": 0.940229596580073,
+   "uniform_reference": 0.955078989219209,
+   "uniform_delta": -0.014849392639135983,
+   "uniform_ci95": [
+    -0.015900235423218292,
+    -0.013817401480363367
+   ]
+  },
+  {
+   "variant": "uniform weights across paths instead of Eq. (weights)",
+   "k_max": 5,
+   "value": 0.9586094112855673,
+   "reference": 0.9621408137713572,
+   "delta": -0.0035314024857898696,
+   "ci95": [
+    -0.004131646550699674,
+    -0.002926851029319383
+   ],
+   "settings": {
+    "alpha": 0.0,
+    "radius": 0.0,
+    "fit_kept": false,
+    "weights": [
+     0.2,
+     0.2,
+     0.2,
+     0.2,
+     0.2
+    ]
+   },
+   "name": "committee-level"
+  },
+  {
+   "variant": "fixed alpha = 1, r = 1/4 instead of the selected ones",
+   "k_max": 5,
+   "value": 0.9602532145544801,
+   "reference": 0.9621408137713572,
+   "delta": -0.0018875992168770894,
+   "ci95": [
+    -0.0022950918545928097,
+    -0.0014539405044794397
+   ],
+   "settings": {
+    "alpha": 1.0,
+    "radius": 0.25,
+    "fit_kept": true,
+    "weights": [
+     0.14202677785088885,
+     0.16997944987633848,
+     0.1337247607199986,
+     0.23408972894645488,
+     0.3201792826063192
+    ]
+   },
+   "name": "committee-level"
+  },
+  {
+   "variant": "prior alone (delta = 0) instead of Eq. (fit)",
+   "k_max": 5,
+   "value": 0.9621408137713572,
+   "reference": 0.9621408137713572,
+   "delta": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "settings": {
+    "alpha": 3.0,
+    "radius": 0.0,
+    "fit_kept": false,
+    "weights": [
+     0.07648071834145284,
+     0.2560621862751605,
+     0.12467853183251063,
+     0.16092737219530168,
+     0.3818511913555744
+    ]
+   },
+   "name": "committee-level"
+  },
+  {
+   "variant": "unbounded fit instead of Eq. (fit)",
+   "k_max": 5,
+   "value": 0.9605872485533371,
+   "reference": 0.9621408137713572,
+   "delta": -0.001553565218020081,
+   "ci95": [
+    -0.0019294840494728266,
+    -0.0011027597585818228
+   ],
+   "settings": {
+    "alpha": 0.1,
+    "radius": "inf",
+    "fit_kept": true,
+    "weights": [
+     0.13700742312832268,
+     0.16264405831615292,
+     0.06531210214061403,
+     0.2499698206469242,
+     0.38506659576798624
+    ]
+   },
+   "name": "committee-level"
+  },
+  {
+   "variant": "without the path worst on validation (four paths)",
+   "k_max": 5,
+   "value": 0.9617039077036647,
+   "reference": 0.9621408137713572,
+   "delta": -0.00043690606769253293,
+   "ci95": [
+    -0.0009452546676521594,
+    8.856428866611526e-05
+   ],
+   "settings": {
+    "alpha": 10.0,
+    "radius": 0.5,
+    "fit_kept": true,
+    "weights": [
+     0.2643587480504871,
+     0.03965199258056785,
+     0.09265519888877262,
+     0.6033340604801725
+    ],
+    "dropped_path": 0,
+    "path_selection_scores": [
+     0.9312826468490841,
+     0.9426204391194642,
+     0.9358679359431782,
+     0.9382625177440379,
+     0.9463698360762931
+    ]
+   },
+   "name": "committee-level"
+  },
+  {
+   "variant": "the best path on validation alone, its five candidates",
+   "k_max": 5,
+   "value": 0.9593534884418018,
+   "reference": 0.9621408137713572,
+   "delta": -0.00278732532955539,
+   "ci95": [
+    -0.0035798710673010216,
+    -0.0020075578339074727
+   ],
+   "settings": {
+    "path": 4,
+    "path_selection_scores": [
+     0.9281520944736485,
+     0.9312626038261556,
+     0.9287335188436192,
+     0.9357063654136546,
+     0.9457574720563532
+    ]
+   },
+   "name": "committee-level"
+  },
+  {
+   "variant": "random candidates per path instead of the best on validation",
+   "k_max": 5,
+   "reference": 0.9621408137713572,
+   "delta": -0.005817855232600472,
+   "delta_sd": 0.0037159094430545513,
+   "delta_range": [
+    -0.012823949860025663,
+    0.0009962796351191683
+   ],
+   "draws": 20,
+   "name": "committee-level"
+  },
+  {
+   "variant": "uniform weights across paths instead of Eq. (weights)",
+   "k_max": 25,
+   "value": 0.955078989219209,
+   "reference": 0.9592813955302513,
+   "delta": -0.004202406311042295,
+   "ci95": [
+    -0.004947883828835442,
+    -0.0033341567773351125
+   ],
+   "settings": {
+    "alpha": 0.0,
+    "radius": 0.0,
+    "fit_kept": false,
+    "weights": [
+     0.2,
+     0.2,
+     0.2,
+     0.2,
+     0.2
+    ]
+   },
+   "name": "committee-level"
+  },
+  {
+   "variant": "fixed alpha = 1, r = 1/4 instead of the selected ones",
+   "k_max": 25,
+   "value": 0.9578445237649647,
+   "reference": 0.9592813955302513,
+   "delta": -0.001436871765286618,
+   "ci95": [
+    -0.002035915995590873,
+    -0.0008097722117800995
+   ],
+   "settings": {
+    "alpha": 1.0,
+    "radius": 0.25,
+    "fit_kept": true,
+    "weights": [
+     0.13253038198066674,
+     0.14813863416005166,
+     0.13531741569516637,
+     0.17367873070712078,
+     0.41033483745699445
+    ]
+   },
+   "name": "committee-level"
+  },
+  {
+   "variant": "prior alone (delta = 0) instead of Eq. (fit)",
+   "k_max": 25,
+   "value": 0.9592153599309439,
+   "reference": 0.9592813955302513,
+   "delta": -6.603559930740133e-05,
+   "ci95": [
+    -0.00018731468198993073,
+    5.597927072928373e-05
+   ],
+   "settings": {
+    "alpha": 10.0,
+    "radius": 0.0,
+    "fit_kept": false,
+    "weights": [
+     0.0017678239570291896,
+     0.005382299733044753,
+     0.0021768147323437395,
+     0.026408934726785346,
+     0.9642641268507971
+    ]
+   },
+   "name": "committee-level"
+  },
+  {
+   "variant": "unbounded fit instead of Eq. (fit)",
+   "k_max": 25,
+   "value": 0.959341347108918,
+   "reference": 0.9592813955302513,
+   "delta": 5.995157866678369e-05,
+   "ci95": [
+    -1.3245610059020585e-05,
+    0.0001429821375838247
+   ],
+   "settings": {
+    "alpha": 0.1,
+    "radius": "inf",
+    "fit_kept": true,
+    "weights": [
+     0.0014495644486536324,
+     9.371050147780841e-05,
+     0.0001067249215885016,
+     0.0004587982197634675,
+     0.9978912019085167
+    ]
+   },
+   "name": "committee-level"
+  },
+  {
+   "variant": "weights per member instead of per path (uniform within a path)",
+   "k_max": 25,
+   "value": 0.9595901669108138,
+   "reference": 0.9592813955302513,
+   "delta": 0.0003087713805625114,
+   "ci95": [
+    -0.00025509685425326444,
+    0.0008799546578887843
+   ],
+   "settings": {
+    "alpha": 10.0,
+    "radius": 0.25,
+    "fit_kept": false,
+    "weights": [
+     0.0016458490197506313,
+     6.953787446611615e-05,
+     3.5692086416325284e-05,
+     5.034944561487935e-09,
+     1.526695418143845e-11,
+     0.0986261109373643,
+     0.0002693322767625419,
+     9.323136138597047e-05,
+     1.186561628272757e-05,
+     9.833016521780135e-14,
+     0.008615828240643842,
+     0.00019958115551036346,
+     3.9702064593198934e-05,
+     2.0981583291092097e-06,
+     1.1715124857739347e-10,
+     0.020451861355489397,
+     0.0040035640018900595,
+     0.0007736676772890749,
+     1.9293333600453637e-05,
+     1.1555291686760034e-05,
+     0.3818063483280992,
+     0.3708832638499909,
+     0.10075299915543746,
+     0.011610320618237087,
+     7.829242931332904e-05
+    ]
+   },
+   "name": "committee-level"
+  },
+  {
+   "variant": "without the path worst on validation (four paths)",
+   "k_max": 25,
+   "value": 0.9592942938497354,
+   "reference": 0.9592813955302513,
+   "delta": 1.2898319484144771e-05,
+   "ci95": [
+    -2.2812844773040242e-05,
+    4.957777265464924e-05
+   ],
+   "settings": {
+    "alpha": 10.0,
+    "radius": 0.5,
+    "fit_kept": true,
+    "weights": [
+     0.002052084588274709,
+     0.0008317343059246084,
+     0.010030765095148995,
+     0.9870854160106516
+    ],
+    "dropped_path": 0,
+    "path_selection_scores": [
+     0.9281520944736485,
+     0.9312626038261556,
+     0.9287335188436192,
+     0.9357063654136546,
+     0.9457574720563532
+    ]
+   },
+   "name": "committee-level"
+  }
+ ]
+}

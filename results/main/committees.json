@@ -1,0 +1,1118 @@
+{
+ "bootstrap": 1000,
+ "seed": 0,
+ "rows": [
+  {
+   "benchmark": "camelyon17",
+   "k_max": 5,
+   "method": "DeepEnsembles",
+   "metric": "gm",
+   "test": 0.6851430367736007,
+   "wilds_metric": 0.731758647447504,
+   "ece": 0.1272228698406032,
+   "selection": 0.8258836967049932,
+   "networks": 5,
+   "inference_gflops": 0.3581632653061224,
+   "networks_trained": 25,
+   "claugE_minus": 0.2769977769977565,
+   "claugE_minus_ci95": [
+    0.27322041129714364,
+    0.280299745812338
+   ]
+  },
+  {
+   "benchmark": "camelyon17",
+   "k_max": 5,
+   "method": "HyperEnsembles",
+   "metric": "gm",
+   "test": 0.8246091931091839,
+   "wilds_metric": 0.8317421873162931,
+   "ece": 0.034059120397915754,
+   "selection": 0.8822014248394743,
+   "networks": 4,
+   "inference_gflops": 0.28653061224489795,
+   "networks_trained": 40,
+   "claugE_minus": 0.13753162066217328,
+   "claugE_minus_ci95": [
+    0.1349221285817562,
+    0.13991667470711885
+   ]
+  },
+  {
+   "benchmark": "camelyon17",
+   "k_max": 5,
+   "method": "AugDiverse",
+   "metric": "gm",
+   "test": 0.8189079606929219,
+   "wilds_metric": 0.8345874385684389,
+   "ece": 0.07222253189141241,
+   "selection": 0.9193856440926379,
+   "networks": 5,
+   "inference_gflops": 0.3581632653061224,
+   "networks_trained": 25,
+   "claugE_minus": 0.14323285307843525,
+   "claugE_minus_ci95": [
+    0.14053687592898254,
+    0.14561150220393446
+   ]
+  },
+  {
+   "benchmark": "camelyon17",
+   "k_max": 5,
+   "method": "EoA",
+   "metric": "gm",
+   "test": 0.7616780726814782,
+   "wilds_metric": 0.7880993251346203,
+   "ece": 0.050150740044240395,
+   "selection": 0.8958425698623501,
+   "networks": 5,
+   "inference_gflops": 0.3581632653061224,
+   "networks_trained": 25,
+   "claugE_minus": 0.20046274108987894,
+   "claugE_minus_ci95": [
+    0.1974160788847467,
+    0.20327045833050186
+   ]
+  },
+  {
+   "benchmark": "camelyon17",
+   "k_max": 5,
+   "method": "DiWA",
+   "metric": "gm",
+   "test": 0.7608859456885257,
+   "wilds_metric": 0.7854539469043196,
+   "ece": 0.1326072425786555,
+   "selection": 0.8587896137007728,
+   "networks": 1,
+   "inference_gflops": 0.07163265306122449,
+   "networks_trained": 25,
+   "claugE_minus": 0.20125486808283144,
+   "claugE_minus_ci95": [
+    0.19812564831718732,
+    0.20411676637208007
+   ]
+  },
+  {
+   "benchmark": "camelyon17",
+   "k_max": 5,
+   "method": "Lookaround",
+   "metric": "gm",
+   "test": 0.8159198096494633,
+   "wilds_metric": 0.8314717708749736,
+   "ece": 0.10079205910522332,
+   "selection": 0.8497165415431638,
+   "networks": 1,
+   "inference_gflops": 0.07163265306122449,
+   "networks_trained": 1,
+   "claugE_minus": 0.14622100412189387,
+   "claugE_minus_ci95": [
+    0.14345982678207503,
+    0.14880725839646414
+   ]
+  },
+  {
+   "benchmark": "camelyon17",
+   "k_max": 5,
+   "method": "GeNeX",
+   "metric": "gm",
+   "test": 0.8447948869373687,
+   "wilds_metric": 0.855045030216098,
+   "ece": 0.016530197053585625,
+   "selection": 0.8987674684992001,
+   "networks": 4,
+   "inference_gflops": 0.28653061224489795,
+   "networks_trained": 193,
+   "claugE_minus": 0.11734592683398848,
+   "claugE_minus_ci95": [
+    0.11496237860763489,
+    0.11963615768638389
+   ]
+  },
+  {
+   "benchmark": "camelyon17",
+   "k_max": 5,
+   "method": "ClaugE",
+   "metric": "gm",
+   "test": 0.9621408137713572,
+   "wilds_metric": 0.9624473863663084,
+   "ece": 0.03548098742894146,
+   "selection": 0.9486362069155218,
+   "networks": 5,
+   "inference_gflops": 0.3581632653061224,
+   "networks_trained": 25
+  },
+  {
+   "benchmark": "camelyon17",
+   "k_max": 25,
+   "method": "DeepEnsembles",
+   "metric": "gm",
+   "test": 0.7392323969875677,
+   "wilds_metric": 0.7707338867072683,
+   "ece": 0.09479765437405002,
+   "selection": 0.8736933616403698,
+   "networks": 25,
+   "inference_gflops": 1.7908163265306123,
+   "networks_trained": 25,
+   "claugE_minus": 0.22004899854268356,
+   "claugE_minus_ci95": [
+    0.2166796760836587,
+    0.22296810783000234
+   ]
+  },
+  {
+   "benchmark": "camelyon17",
+   "k_max": 25,
+   "method": "HyperEnsembles",
+   "metric": "gm",
+   "test": 0.7721832883823853,
+   "wilds_metric": 0.7943541749947093,
+   "ece": 0.06928803196999045,
+   "selection": 0.9101411761479402,
+   "networks": 5,
+   "inference_gflops": 0.3581632653061224,
+   "networks_trained": 40,
+   "claugE_minus": 0.187098107147866,
+   "claugE_minus_ci95": [
+    0.1842263761557834,
+    0.18997837091110814
+   ]
+  },
+  {
+   "benchmark": "camelyon17",
+   "k_max": 25,
+   "method": "AugDiverse",
+   "metric": "gm",
+   "test": 0.8777472864589975,
+   "wilds_metric": 0.8842382486420391,
+   "ece": 0.040457765340454636,
+   "selection": 0.938994187863166,
+   "networks": 25,
+   "inference_gflops": 1.7908163265306123,
+   "networks_trained": 25,
+   "claugE_minus": 0.0815341090712538,
+   "claugE_minus_ci95": [
+    0.07945879480049171,
+    0.08343892710871471
+   ]
+  },
+  {
+   "benchmark": "camelyon17",
+   "k_max": 25,
+   "method": "EoA",
+   "metric": "gm",
+   "test": 0.7439067890954121,
+   "wilds_metric": 0.7748489195099584,
+   "ece": 0.06382649424646866,
+   "selection": 0.8894306425083789,
+   "networks": 25,
+   "inference_gflops": 1.7908163265306123,
+   "networks_trained": 25,
+   "claugE_minus": 0.2153746064348392,
+   "claugE_minus_ci95": [
+    0.212179396002009,
+    0.21831161940842025
+   ]
+  },
+  {
+   "benchmark": "camelyon17",
+   "k_max": 25,
+   "method": "DiWA",
+   "metric": "gm",
+   "test": 0.7608859456885257,
+   "wilds_metric": 0.7854539469043196,
+   "ece": 0.1326072425786555,
+   "selection": 0.8587896137007728,
+   "networks": 1,
+   "inference_gflops": 0.07163265306122449,
+   "networks_trained": 25,
+   "claugE_minus": 0.19839544984172552,
+   "claugE_minus_ci95": [
+    0.19512261879939272,
+    0.20121015474869583
+   ]
+  },
+  {
+   "benchmark": "camelyon17",
+   "k_max": 25,
+   "method": "Lookaround",
+   "metric": "gm",
+   "test": 0.8159198096494633,
+   "wilds_metric": 0.8314717708749736,
+   "ece": 0.10079205910522332,
+   "selection": 0.8497165415431638,
+   "networks": 1,
+   "inference_gflops": 0.07163265306122449,
+   "networks_trained": 1,
+   "claugE_minus": 0.14336158588078796,
+   "claugE_minus_ci95": [
+    0.14053331015934067,
+    0.14587474644549037
+   ]
+  },
+  {
+   "benchmark": "camelyon17",
+   "k_max": 25,
+   "method": "GeNeX",
+   "metric": "gm",
+   "test": 0.8447948869373687,
+   "wilds_metric": 0.855045030216098,
+   "ece": 0.016530197053585625,
+   "selection": 0.8987674684992001,
+   "networks": 4,
+   "inference_gflops": 0.28653061224489795,
+   "networks_trained": 193,
+   "claugE_minus": 0.11448650859288256,
+   "claugE_minus_ci95": [
+    0.11207930788724356,
+    0.11669486610605569
+   ]
+  },
+  {
+   "benchmark": "camelyon17",
+   "k_max": 25,
+   "method": "ClaugE",
+   "metric": "gm",
+   "test": 0.9592813955302513,
+   "wilds_metric": 0.9597784936628495,
+   "ece": 0.02070515920629308,
+   "selection": 0.9455746433452897,
+   "networks": 25,
+   "inference_gflops": 1.7908163265306123,
+   "networks_trained": 25
+  },
+  {
+   "benchmark": "iwildcam",
+   "k_max": 5,
+   "method": "DeepEnsembles",
+   "metric": "macro_f1",
+   "test": 0.2794853046067515,
+   "wilds_metric": 0.2794853046067515,
+   "ece": 0.12803352637796492,
+   "selection": 0.32519776925785115,
+   "networks": 5,
+   "inference_gflops": 1.9500000000000002,
+   "networks_trained": 25,
+   "claugE_minus": -0.0049048674440503315,
+   "claugE_minus_ci95": [
+    -0.036610301913834416,
+    0.023534698053233667
+   ]
+  },
+  {
+   "benchmark": "iwildcam",
+   "k_max": 5,
+   "method": "HyperEnsembles",
+   "metric": "macro_f1",
+   "test": 0.2194606440002478,
+   "wilds_metric": 0.2194606440002478,
+   "ece": 0.06832219020815272,
+   "selection": 0.3027617440262505,
+   "networks": 5,
+   "inference_gflops": 1.9500000000000002,
+   "networks_trained": 50,
+   "claugE_minus": 0.05511979316245333,
+   "claugE_minus_ci95": [
+    0.017605311529735615,
+    0.07949873745910828
+   ]
+  },
+  {
+   "benchmark": "iwildcam",
+   "k_max": 5,
+   "method": "AugDiverse",
+   "metric": "macro_f1",
+   "test": 0.25722551831718027,
+   "wilds_metric": 0.25722551831718027,
+   "ece": 0.10085267123151453,
+   "selection": 0.32855176890520854,
+   "networks": 5,
+   "inference_gflops": 1.9500000000000002,
+   "networks_trained": 25,
+   "claugE_minus": 0.017354918845520872,
+   "claugE_minus_ci95": [
+    -0.0066527419490467294,
+    0.04585631877136492
+   ]
+  },
+  {
+   "benchmark": "iwildcam",
+   "k_max": 5,
+   "method": "EoA",
+   "metric": "macro_f1",
+   "test": 0.2798739441394604,
+   "wilds_metric": 0.2798739441394604,
+   "ece": 0.15598069453905739,
+   "selection": 0.3292955509045152,
+   "networks": 5,
+   "inference_gflops": 1.9500000000000002,
+   "networks_trained": 25,
+   "claugE_minus": -0.005293506976759232,
+   "claugE_minus_ci95": [
+    -0.03605866534856165,
+    0.02202028901455182
+   ]
+  },
+  {
+   "benchmark": "iwildcam",
+   "k_max": 5,
+   "method": "DiWA",
+   "metric": "macro_f1",
+   "test": 0.23562816791320335,
+   "wilds_metric": 0.23562816791320335,
+   "ece": 0.21087522919821242,
+   "selection": 0.29089769920196107,
+   "networks": 1,
+   "inference_gflops": 0.39,
+   "networks_trained": 25,
+   "claugE_minus": 0.038952269249497795,
+   "claugE_minus_ci95": [
+    0.0011857335518292145,
+    0.05748138580596303
+   ]
+  },
+  {
+   "benchmark": "iwildcam",
+   "k_max": 5,
+   "method": "Lookaround",
+   "metric": "macro_f1",
+   "test": 0.24639979706650603,
+   "wilds_metric": 0.24639979706650603,
+   "ece": 0.18852955223929907,
+   "selection": 0.3301850685054347,
+   "networks": 1,
+   "inference_gflops": 0.39,
+   "networks_trained": 1,
+   "claugE_minus": 0.028180640096195114,
+   "claugE_minus_ci95": [
+    -0.0023268461570802143,
+    0.051379993994765255
+   ]
+  },
+  {
+   "benchmark": "iwildcam",
+   "k_max": 5,
+   "method": "GeNeX",
+   "metric": "macro_f1",
+   "test": 0.14116344039329243,
+   "wilds_metric": 0.14116344039329243,
+   "ece": 0.13451808310258603,
+   "selection": 0.21612445920969794,
+   "networks": 4,
+   "inference_gflops": 1.56,
+   "networks_trained": 193,
+   "claugE_minus": 0.1334169967694087,
+   "claugE_minus_ci95": [
+    0.09910566043383118,
+    0.1608285331857614
+   ]
+  },
+  {
+   "benchmark": "iwildcam",
+   "k_max": 5,
+   "method": "ClaugE",
+   "metric": "macro_f1",
+   "test": 0.27458043716270114,
+   "wilds_metric": 0.27458043716270114,
+   "ece": 0.056964966037201185,
+   "selection": 0.3513783231117107,
+   "networks": 5,
+   "inference_gflops": 1.9500000000000002,
+   "networks_trained": 25
+  },
+  {
+   "benchmark": "iwildcam",
+   "k_max": 25,
+   "method": "DeepEnsembles",
+   "metric": "macro_f1",
+   "test": 0.277039464421335,
+   "wilds_metric": 0.277039464421335,
+   "ece": 0.07383621523854624,
+   "selection": 0.3330729034681539,
+   "networks": 25,
+   "inference_gflops": 9.75,
+   "networks_trained": 25,
+   "claugE_minus": 0.0048811090951197955,
+   "claugE_minus_ci95": [
+    -0.022625506376543026,
+    0.027065752928726688
+   ]
+  },
+  {
+   "benchmark": "iwildcam",
+   "k_max": 25,
+   "method": "HyperEnsembles",
+   "metric": "macro_f1",
+   "test": 0.22389202429342384,
+   "wilds_metric": 0.22389202429342384,
+   "ece": 0.06812457447650974,
+   "selection": 0.30772700288348515,
+   "networks": 12,
+   "inference_gflops": 4.68,
+   "networks_trained": 50,
+   "claugE_minus": 0.05802854922303094,
+   "claugE_minus_ci95": [
+    0.02167056495461809,
+    0.08006887908665829
+   ]
+  },
+  {
+   "benchmark": "iwildcam",
+   "k_max": 25,
+   "method": "AugDiverse",
+   "metric": "macro_f1",
+   "test": 0.2511495578355068,
+   "wilds_metric": 0.2511495578355068,
+   "ece": 0.09305321154777782,
+   "selection": 0.33519571869593373,
+   "networks": 25,
+   "inference_gflops": 9.75,
+   "networks_trained": 25,
+   "claugE_minus": 0.030771015680947977,
+   "claugE_minus_ci95": [
+    0.008675243572310112,
+    0.04715881671248918
+   ]
+  },
+  {
+   "benchmark": "iwildcam",
+   "k_max": 25,
+   "method": "EoA",
+   "metric": "macro_f1",
+   "test": 0.27265395529499287,
+   "wilds_metric": 0.27265395529499287,
+   "ece": 0.14216644034826215,
+   "selection": 0.338517149230083,
+   "networks": 25,
+   "inference_gflops": 9.75,
+   "networks_trained": 25,
+   "claugE_minus": 0.009266618221461909,
+   "claugE_minus_ci95": [
+    -0.01786445926125313,
+    0.02987425220737149
+   ]
+  },
+  {
+   "benchmark": "iwildcam",
+   "k_max": 25,
+   "method": "DiWA",
+   "metric": "macro_f1",
+   "test": 0.23562816791320335,
+   "wilds_metric": 0.23562816791320335,
+   "ece": 0.21087522919821242,
+   "selection": 0.29089769920196107,
+   "networks": 1,
+   "inference_gflops": 0.39,
+   "networks_trained": 25,
+   "claugE_minus": 0.04629240560325143,
+   "claugE_minus_ci95": [
+    0.010936188310662204,
+    0.06679605542151028
+   ]
+  },
+  {
+   "benchmark": "iwildcam",
+   "k_max": 25,
+   "method": "Lookaround",
+   "metric": "macro_f1",
+   "test": 0.24639979706650603,
+   "wilds_metric": 0.24639979706650603,
+   "ece": 0.18852955223929907,
+   "selection": 0.3301850685054347,
+   "networks": 1,
+   "inference_gflops": 0.39,
+   "networks_trained": 1,
+   "claugE_minus": 0.03552077644994875,
+   "claugE_minus_ci95": [
+    0.0055870089673080645,
+    0.06308126115217923
+   ]
+  },
+  {
+   "benchmark": "iwildcam",
+   "k_max": 25,
+   "method": "GeNeX",
+   "metric": "macro_f1",
+   "test": 0.14116344039329243,
+   "wilds_metric": 0.14116344039329243,
+   "ece": 0.13451808310258603,
+   "selection": 0.21612445920969794,
+   "networks": 4,
+   "inference_gflops": 1.56,
+   "networks_trained": 193,
+   "claugE_minus": 0.14075713312316235,
+   "claugE_minus_ci95": [
+    0.10703253567733151,
+    0.1731710376033253
+   ]
+  },
+  {
+   "benchmark": "iwildcam",
+   "k_max": 25,
+   "method": "ClaugE",
+   "metric": "macro_f1",
+   "test": 0.2819205735164548,
+   "wilds_metric": 0.2819205735164548,
+   "ece": 0.07253129657575665,
+   "selection": 0.34836765324634145,
+   "networks": 25,
+   "inference_gflops": 9.75,
+   "networks_trained": 25
+  },
+  {
+   "benchmark": "rxrx1",
+   "k_max": 5,
+   "method": "DeepEnsembles",
+   "metric": "macro_f1",
+   "test": 0.21190977826306762,
+   "wilds_metric": 0.23187732342007436,
+   "ece": 0.10978380592211195,
+   "selection": 0.09091955897722039,
+   "networks": 5,
+   "inference_gflops": 1.9500000000000002,
+   "networks_trained": 25,
+   "claugE_minus": 0.09419787378857947,
+   "claugE_minus_ci95": [
+    0.07043742960294697,
+    0.11485261327020556
+   ]
+  },
+  {
+   "benchmark": "rxrx1",
+   "k_max": 5,
+   "method": "HyperEnsembles",
+   "metric": "macro_f1",
+   "test": 0.2313551287089462,
+   "wilds_metric": 0.2523815055762082,
+   "ece": 0.06801584370256142,
+   "selection": 0.11078946999274791,
+   "networks": 5,
+   "inference_gflops": 1.9500000000000002,
+   "networks_trained": 50,
+   "claugE_minus": 0.07475252334270088,
+   "claugE_minus_ci95": [
+    0.05520274878098225,
+    0.09417728720622895
+   ]
+  },
+  {
+   "benchmark": "rxrx1",
+   "k_max": 5,
+   "method": "AugDiverse",
+   "metric": "macro_f1",
+   "test": 0.17307315731747566,
+   "wilds_metric": 0.19269865241635686,
+   "ece": 0.06971929779342152,
+   "selection": 0.10129191203321146,
+   "networks": 5,
+   "inference_gflops": 1.9500000000000002,
+   "networks_trained": 25,
+   "claugE_minus": 0.13303449473417142,
+   "claugE_minus_ci95": [
+    0.10123841472783433,
+    0.1618154073692976
+   ]
+  },
+  {
+   "benchmark": "rxrx1",
+   "k_max": 5,
+   "method": "EoA",
+   "metric": "macro_f1",
+   "test": 0.15778344644468503,
+   "wilds_metric": 0.17347235130111524,
+   "ece": 0.053832887684096914,
+   "selection": 0.08252362910071494,
+   "networks": 5,
+   "inference_gflops": 1.9500000000000002,
+   "networks_trained": 25,
+   "claugE_minus": 0.14832420560696205,
+   "claugE_minus_ci95": [
+    0.11315160906204842,
+    0.17948530456072032
+   ]
+  },
+  {
+   "benchmark": "rxrx1",
+   "k_max": 5,
+   "method": "DiWA",
+   "metric": "macro_f1",
+   "test": 0.05907009208604882,
+   "wilds_metric": 0.07069005576208179,
+   "ece": 0.1921399499518603,
+   "selection": 0.017005200864720574,
+   "networks": 1,
+   "inference_gflops": 0.39,
+   "networks_trained": 25,
+   "claugE_minus": 0.24703755996559826,
+   "claugE_minus_ci95": [
+    0.19347023309003597,
+    0.29362290047804607
+   ]
+  },
+  {
+   "benchmark": "rxrx1",
+   "k_max": 5,
+   "method": "Lookaround",
+   "metric": "macro_f1",
+   "test": 0.1958711876470221,
+   "wilds_metric": 0.21146026951672864,
+   "ece": 0.323429355811726,
+   "selection": 0.11766751060544885,
+   "networks": 1,
+   "inference_gflops": 0.39,
+   "networks_trained": 1,
+   "claugE_minus": 0.11023646440462498,
+   "claugE_minus_ci95": [
+    0.08528195572783832,
+    0.13266422653859583
+   ]
+  },
+  {
+   "benchmark": "rxrx1",
+   "k_max": 5,
+   "method": "GeNeX",
+   "metric": "macro_f1",
+   "test": 0.004515591227456958,
+   "wilds_metric": 0.030030204460966544,
+   "ece": 0.018876761863921107,
+   "selection": 0.002816488147698907,
+   "networks": 4,
+   "inference_gflops": 1.56,
+   "networks_trained": 62,
+   "claugE_minus": 0.3015920608241901,
+   "claugE_minus_ci95": [
+    0.22936072170577648,
+    0.36313543583422897
+   ]
+  },
+  {
+   "benchmark": "rxrx1",
+   "k_max": 5,
+   "method": "ClaugE",
+   "metric": "macro_f1",
+   "test": 0.3061076520516471,
+   "wilds_metric": 0.32446561338289964,
+   "ece": 0.0827382955346246,
+   "selection": 0.18543385220058706,
+   "networks": 5,
+   "inference_gflops": 1.9500000000000002,
+   "networks_trained": 25
+  },
+  {
+   "benchmark": "rxrx1",
+   "k_max": 25,
+   "method": "DeepEnsembles",
+   "metric": "macro_f1",
+   "test": 0.23316070704241287,
+   "wilds_metric": 0.2532818308550186,
+   "ece": 0.05917410238955323,
+   "selection": 0.10148286856700656,
+   "networks": 25,
+   "inference_gflops": 9.75,
+   "networks_trained": 25,
+   "claugE_minus": 0.10438910853591771,
+   "claugE_minus_ci95": [
+    0.0795091831358889,
+    0.12436646247443253
+   ]
+  },
+  {
+   "benchmark": "rxrx1",
+   "k_max": 25,
+   "method": "HyperEnsembles",
+   "metric": "macro_f1",
+   "test": 0.24492151342233784,
+   "wilds_metric": 0.2665253252788104,
+   "ece": 0.08817769594836966,
+   "selection": 0.11550038367415595,
+   "networks": 17,
+   "inference_gflops": 6.63,
+   "networks_trained": 50,
+   "claugE_minus": 0.09262830215599274,
+   "claugE_minus_ci95": [
+    0.07117760696365316,
+    0.1109947346216544
+   ]
+  },
+  {
+   "benchmark": "rxrx1",
+   "k_max": 25,
+   "method": "AugDiverse",
+   "metric": "macro_f1",
+   "test": 0.18711925702081164,
+   "wilds_metric": 0.2087592936802974,
+   "ece": 0.03994864398442611,
+   "selection": 0.1098395654667379,
+   "networks": 25,
+   "inference_gflops": 9.75,
+   "networks_trained": 25,
+   "claugE_minus": 0.15043055855751894,
+   "claugE_minus_ci95": [
+    0.11868168002400231,
+    0.17782472312087824
+   ]
+  },
+  {
+   "benchmark": "rxrx1",
+   "k_max": 25,
+   "method": "EoA",
+   "metric": "macro_f1",
+   "test": 0.16096553464713453,
+   "wilds_metric": 0.17617332713754646,
+   "ece": 0.0430565495556639,
+   "selection": 0.08223906550623557,
+   "networks": 25,
+   "inference_gflops": 9.75,
+   "networks_trained": 25,
+   "claugE_minus": 0.17658428093119605,
+   "claugE_minus_ci95": [
+    0.14211450730700437,
+    0.2074256546924886
+   ]
+  },
+  {
+   "benchmark": "rxrx1",
+   "k_max": 25,
+   "method": "DiWA",
+   "metric": "macro_f1",
+   "test": 0.05907009208604882,
+   "wilds_metric": 0.07069005576208179,
+   "ece": 0.1921399499518603,
+   "selection": 0.017005200864720574,
+   "networks": 1,
+   "inference_gflops": 0.39,
+   "networks_trained": 25,
+   "claugE_minus": 0.2784797234922818,
+   "claugE_minus_ci95": [
+    0.22305178273065351,
+    0.3268584851700965
+   ]
+  },
+  {
+   "benchmark": "rxrx1",
+   "k_max": 25,
+   "method": "Lookaround",
+   "metric": "macro_f1",
+   "test": 0.1958711876470221,
+   "wilds_metric": 0.21146026951672864,
+   "ece": 0.323429355811726,
+   "selection": 0.11766751060544885,
+   "networks": 1,
+   "inference_gflops": 0.39,
+   "networks_trained": 1,
+   "claugE_minus": 0.14167862793130848,
+   "claugE_minus_ci95": [
+    0.11491544507910893,
+    0.16593792941159155
+   ]
+  },
+  {
+   "benchmark": "rxrx1",
+   "k_max": 25,
+   "method": "GeNeX",
+   "metric": "macro_f1",
+   "test": 0.010819598581146513,
+   "wilds_metric": 0.03888824349442379,
+   "ece": 0.023863553932455418,
+   "selection": 0.004167006045354694,
+   "networks": 6,
+   "inference_gflops": 2.34,
+   "networks_trained": 62,
+   "claugE_minus": 0.3267302169971841,
+   "claugE_minus_ci95": [
+    0.25481321363948906,
+    0.3874690713124986
+   ]
+  },
+  {
+   "benchmark": "rxrx1",
+   "k_max": 25,
+   "method": "ClaugE",
+   "metric": "macro_f1",
+   "test": 0.3375498155783306,
+   "wilds_metric": 0.3555413568773234,
+   "ece": 0.13887530165094863,
+   "selection": 0.2073891772463649,
+   "networks": 25,
+   "inference_gflops": 9.75,
+   "networks_trained": 25
+  },
+  {
+   "benchmark": "kather",
+   "k_max": 5,
+   "method": "DeepEnsembles",
+   "metric": "gm",
+   "test": 0.9229430367432776,
+   "wilds_metric": 0.9525069637883008,
+   "ece": 0.044511318355215004,
+   "selection": 0.9993189378103587,
+   "networks": 5,
+   "inference_gflops": 1.9500000000000002,
+   "networks_trained": 25,
+   "claugE_minus": 0.03726033382901195,
+   "claugE_minus_ci95": [
+    0.028939565582316366,
+    0.045788295004851744
+   ]
+  },
+  {
+   "benchmark": "kather",
+   "k_max": 5,
+   "method": "HyperEnsembles",
+   "metric": "gm",
+   "test": 0.8646995168188425,
+   "wilds_metric": 0.8917827298050139,
+   "ece": 0.031003694097906598,
+   "selection": 0.9983622707298575,
+   "networks": 2,
+   "inference_gflops": 0.78,
+   "networks_trained": 35,
+   "claugE_minus": 0.09550385375344705,
+   "claugE_minus_ci95": [
+    0.08475635894904478,
+    0.10602433571784098
+   ]
+  },
+  {
+   "benchmark": "kather",
+   "k_max": 5,
+   "method": "AugDiverse",
+   "metric": "gm",
+   "test": 0.961826020492165,
+   "wilds_metric": 0.9733983286908078,
+   "ece": 0.06037442100363715,
+   "selection": 0.9983438701411329,
+   "networks": 5,
+   "inference_gflops": 1.9500000000000002,
+   "networks_trained": 25,
+   "claugE_minus": -0.0016226499198754851,
+   "claugE_minus_ci95": [
+    -0.006552270387220627,
+    0.003570067512084679
+   ]
+  },
+  {
+   "benchmark": "kather",
+   "k_max": 5,
+   "method": "EoA",
+   "metric": "gm",
+   "test": 0.9287871584610179,
+   "wilds_metric": 0.9419220055710307,
+   "ece": 0.11599440508102109,
+   "selection": 0.9976239469640135,
+   "networks": 5,
+   "inference_gflops": 1.9500000000000002,
+   "networks_trained": 25,
+   "claugE_minus": 0.03141621211127166,
+   "claugE_minus_ci95": [
+    0.023858159461084848,
+    0.03803475784750495
+   ]
+  },
+  {
+   "benchmark": "kather",
+   "k_max": 5,
+   "method": "DiWA",
+   "metric": "gm",
+   "test": 0.9308228914293689,
+   "wilds_metric": 0.9598885793871866,
+   "ece": 0.0619622133373283,
+   "selection": 0.9989148809061865,
+   "networks": 1,
+   "inference_gflops": 0.39,
+   "networks_trained": 25,
+   "claugE_minus": 0.029380479142920635,
+   "claugE_minus_ci95": [
+    0.0214260574371544,
+    0.03734606069851034
+   ]
+  },
+  {
+   "benchmark": "kather",
+   "k_max": 5,
+   "method": "Lookaround",
+   "metric": "gm",
+   "test": 0.9497078238456798,
+   "wilds_metric": 0.9536211699164345,
+   "ece": 0.03792126222369116,
+   "selection": 0.9980850286022505,
+   "networks": 1,
+   "inference_gflops": 0.39,
+   "networks_trained": 1,
+   "claugE_minus": 0.010495546726609795,
+   "claugE_minus_ci95": [
+    0.004351738964637789,
+    0.016138868401672033
+   ]
+  },
+  {
+   "benchmark": "kather",
+   "k_max": 5,
+   "method": "GeNeX",
+   "metric": "gm",
+   "test": 0.9350447087573242,
+   "wilds_metric": 0.9612813370473537,
+   "ece": 0.10680156112259656,
+   "selection": 0.9869865243330967,
+   "networks": 3,
+   "inference_gflops": 1.17,
+   "networks_trained": 193,
+   "claugE_minus": 0.0251586618149654,
+   "claugE_minus_ci95": [
+    0.017726027655702227,
+    0.03263477950529487
+   ]
+  },
+  {
+   "benchmark": "kather",
+   "k_max": 5,
+   "method": "ClaugE",
+   "metric": "gm",
+   "test": 0.9602033705722895,
+   "wilds_metric": 0.9745125348189415,
+   "ece": 0.05749276442251772,
+   "selection": 0.9976749139180483,
+   "networks": 5,
+   "inference_gflops": 1.9500000000000002,
+   "networks_trained": 25
+  },
+  {
+   "benchmark": "kather",
+   "k_max": 25,
+   "method": "DeepEnsembles",
+   "metric": "gm",
+   "test": 0.9277114703384471,
+   "wilds_metric": 0.953899721448468,
+   "ece": 0.05016477067018451,
+   "selection": 0.9993601713750426,
+   "networks": 25,
+   "inference_gflops": 9.75,
+   "networks_trained": 25,
+   "claugE_minus": 0.03674039262120732,
+   "claugE_minus_ci95": [
+    0.02940384192916183,
+    0.043408220798016185
+   ]
+  },
+  {
+   "benchmark": "kather",
+   "k_max": 25,
+   "method": "HyperEnsembles",
+   "metric": "gm",
+   "test": 0.8676363363013427,
+   "wilds_metric": 0.8937325905292479,
+   "ece": 0.026266398726125472,
+   "selection": 0.9985786132625841,
+   "networks": 4,
+   "inference_gflops": 1.56,
+   "networks_trained": 35,
+   "claugE_minus": 0.09681552665831172,
+   "claugE_minus_ci95": [
+    0.08745166561035687,
+    0.10641729921404854
+   ]
+  },
+  {
+   "benchmark": "kather",
+   "k_max": 25,
+   "method": "AugDiverse",
+   "metric": "gm",
+   "test": 0.9611554085835388,
+   "wilds_metric": 0.9724233983286908,
+   "ece": 0.06502144859393293,
+   "selection": 0.998691509961169,
+   "networks": 25,
+   "inference_gflops": 9.75,
+   "networks_trained": 25,
+   "claugE_minus": 0.0032964543761156984,
+   "claugE_minus_ci95": [
+    -0.0008921678672525413,
+    0.007585999902722437
+   ]
+  },
+  {
+   "benchmark": "kather",
+   "k_max": 25,
+   "method": "EoA",
+   "metric": "gm",
+   "test": 0.931508966930529,
+   "wilds_metric": 0.943732590529248,
+   "ece": 0.12197227909949501,
+   "selection": 0.9977022054888206,
+   "networks": 25,
+   "inference_gflops": 9.75,
+   "networks_trained": 25,
+   "claugE_minus": 0.03294289602912548,
+   "claugE_minus_ci95": [
+    0.02688160887048884,
+    0.03898113916572321
+   ]
+  },
+  {
+   "benchmark": "kather",
+   "k_max": 25,
+   "method": "DiWA",
+   "metric": "gm",
+   "test": 0.9308228914293689,
+   "wilds_metric": 0.9598885793871866,
+   "ece": 0.0619622133373283,
+   "selection": 0.9989148809061865,
+   "networks": 1,
+   "inference_gflops": 0.39,
+   "networks_trained": 25,
+   "claugE_minus": 0.033628971530285545,
+   "claugE_minus_ci95": [
+    0.026348289941464785,
+    0.040369098286552337
+   ]
+  },
+  {
+   "benchmark": "kather",
+   "k_max": 25,
+   "method": "Lookaround",
+   "metric": "gm",
+   "test": 0.9497078238456798,
+   "wilds_metric": 0.9536211699164345,
+   "ece": 0.03792126222369116,
+   "selection": 0.9980850286022505,
+   "networks": 1,
+   "inference_gflops": 0.39,
+   "networks_trained": 1,
+   "claugE_minus": 0.014744039113974705,
+   "claugE_minus_ci95": [
+    0.008879099420328204,
+    0.020465601259431178
+   ]
+  },
+  {
+   "benchmark": "kather",
+   "k_max": 25,
+   "method": "GeNeX",
+   "metric": "gm",
+   "test": 0.9350447087573242,
+   "wilds_metric": 0.9612813370473537,
+   "ece": 0.10680156112259656,
+   "selection": 0.9869865243330967,
+   "networks": 3,
+   "inference_gflops": 1.17,
+   "networks_trained": 193,
+   "claugE_minus": 0.02940715420233031,
+   "claugE_minus_ci95": [
+    0.022626860184375285,
+    0.035981374608610506
+   ]
+  },
+  {
+   "benchmark": "kather",
+   "k_max": 25,
+   "method": "ClaugE",
+   "metric": "gm",
+   "test": 0.9644518629596545,
+   "wilds_metric": 0.9785515320334262,
+   "ece": 0.09360379579731945,
+   "selection": 0.9974876787611889,
+   "networks": 25,
+   "inference_gflops": 9.75,
+   "networks_trained": 25
+  }
+ ]
+}

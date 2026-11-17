@@ -1,0 +1,26 @@
+\begin{tabular}{@{}p{0.47\columnwidth}cccc@{}}
+\toprule
+& \multicolumn{2}{c}{Camelyon17} & \multicolumn{2}{c}{RxRx1} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+variant & $k\le5$ & $k\le25$ & $k\le5$ & $k\le25$ \\
+\midrule
+\multicolumn{5}{@{}l}{\emph{training paths (members retrained)}} \\
+whole palette for every path (no partition) & $-0.91^\ast$ & $-0.34^\ast$ & $-8.03^\ast$ & --- \\
+random partition of the transforms & $-0.32^\ast$ & $-0.19^\ast$ & $-7.11^\ast$ & --- \\
+partition of the data instead & $-4.04^\ast$ & $-3.85^\ast$ & $-20.61^\ast$ & --- \\
+one reference image instead of ten & $-0.81^\ast$ & $-0.37^\ast$ & $-2.53^\ast$ & --- \\
+self-supervised encoder (DINO) & $-0.17^\ast$ & $-0.68^\ast$ & $-3.17^\ast$ & --- \\
+identity share $0$ instead of $1/k$ & $-1.86^\ast$ & $-1.03^\ast$ & $-0.56^\ast$ & --- \\
+identity share $\frac12$ instead of $1/k$ & $-1.40^\ast$ & $-1.27^\ast$ & $-0.42$ & --- \\
+$k=20$ paths, one candidate each & --- & $+0.15^\ast$ & --- & $-2.02^\ast$ \\
+\midrule
+\multicolumn{5}{@{}l}{\emph{committee (same members)}} \\
+the best path alone, its five candidates & $-0.28^\ast$ & --- & $+1.55^\ast$ & --- \\
+random candidate per path, not the best & $-0.58$ & --- & $-0.49$ & --- \\
+weights per member, not per path & --- & $+0.03$ & --- & $+0.21$ \\
+uniform weights across paths & $-0.35^\ast$ & $-0.42^\ast$ & $-1.85^\ast$ & $-0.30^\ast$ \\
+fixed $\alpha=1$, $\rho=\frac14$ & $-0.19^\ast$ & $-0.14^\ast$ & $-0.78^\ast$ & $-0.10$ \\
+prior alone ($\delta=0$) & $0.00$ & $-0.01$ & $-0.62^\ast$ & $0.00$ \\
+unbounded fit ($\rho=\infty$) & $-0.16^\ast$ & $+0.01$ & $+0.11$ & $0.00$ \\
+\bottomrule
+\end{tabular}
