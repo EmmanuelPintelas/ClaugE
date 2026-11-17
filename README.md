@@ -68,7 +68,7 @@ partition labels with the method's own code.
 
 ## 2. Download the stored predictions
 
-**Link: to be added.**
+**https://drive.google.com/drive/folders/15CXeCZfWBGgDPqMB6yJdxPM_WngCRUk5?usp=sharing**
 
 The release holds the stored predictions (pre-softmax logits of every network on every
 split, with the labels and domains of each split) as zip parts with a `SHA256SUMS.txt`,
